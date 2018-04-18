@@ -281,7 +281,7 @@ opacity: 1;
 .slick-slide img
 {
     display: block;
-    height: 150px;
+    height: 250px;
 }
 .slick-slide.slick-loading img
 {
@@ -312,8 +312,67 @@ opacity: 1;
 }
 
 div.slide.slick-slide.slick-active {
-  height: 150px;
+  height: 500px;
 }
+
+
+.image_container {
+  position: relative;
+
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.image_container:hover .overlay {
+  opacity: 3;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image_container span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+/* .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} */
 </style>
 </head>
 
@@ -367,137 +426,6 @@ div.slide.slick-slide.slick-active {
 
 
 
-<h2 style="text-align:center">Techcrane</h2>
-
-<div class="container">
-<div class="row">
-  <div class="col-md-2"></div>
-
-  <div class="col-md-8">
-<!--
-	<div class="description">
-	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
-	</p>
-	</div>
-  <div class="description">
-	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
-	</p>	</div>
-	<div class="description">
-	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
-	</p>	</div>\
-	<div class="description">
-	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
-	</p>	</div>
-	<div class="description">
-	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
-	</p>	</div>
-	<div class="description">
-	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
-	</p>	</div>
-	<div class="description">
-	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
-	</p>	</div>
-   -->
-
-
-
-
-    <div class="column">
-      <img class="demo cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(1)" alt="The Woods" longdesc=" 1 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/slider1.jpg" style="width:100%; height: 100%;" onclick="currentSlide(2)" alt="Trolltunga, Norway" longdesc=" 2 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/slider2.jpg" style="width:100%; height: 100%;" onclick="currentSlide(3)" alt="Mountains and fjords" longdesc=" 3 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/slider3.jpg" style="width:100%; height: 100%;" onclick="currentSlide(4)" alt="Northern Lights" longdesc=" 4 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(5)" alt="Nature and sunrise" longdesc=" 5 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
-    </div>
-    <!-- <div class="column">
-      <img class="demo cursor" src="images/slider1.jpg" style="width:100%; height: 100%; border: 4px solid #2f3542;" onclick="currentSlide(6)" alt="Snowy Mountains" longdesc=" 6 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
-    </div> -->
-    <!-- <div class="column">
-      <img class="demo cursor" src="images/slider1.jpg" style="width:100%; height: 100%; border: 4px solid #2f3542;" onclick="currentSlide(7)" alt="Snowy Mountains" longdesc=" 7 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
-    </div> -->
-
-
-
-       <div class="mySlides">
-        <div class="numbertext">1 / 6</div>
-        <img src="images/slider1.jpeg" style="width:100%; height: 300px;">
-       </div>
-
-       <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-        <img src="images/slider1.jpg" style="width:100%;  height: 300px;">
-       </div>
-
-       <div class="mySlides">
-        <div class="numbertext">3 / 6</div>
-        <img src="images/slider2.jpg" style="width:100%; height: 300px;">
-       </div>
-
-       <div class="mySlides">
-        <div class="numbertext">4 / 6</div>
-        <img src="images/slider3.jpg" style="width:100%; height: 300px;">
-       </div>
-
-       <div class="mySlides">
-        <div class="numbertext">5 / 6</div>
-        <img src="images/slider1.jpeg" style="width:100%; height: 300px;">
-       </div>
-
-       <!-- <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-        <img src="images/slider1.jpg" style="width:100%; height: 300px;">
-       </div> -->
-
-		<!-- <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-        <img src="images/slider1.jpg" style="width:100%; height: 300px;">
-       </div> -->
-
-<!--
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a> -->
-
-    <div class="caption-container">
-      <div id="caption"></div>
-      <div id="description"></div>
-    </div>
-    <!-- <div class="tech-slideshow">
-  <div class="mover-1"></div>
-  <div class="mover-2"></div>
-</div> -->
-
-<div class="customer-logos">
-  <div class="slide"><img src="images/slider1.jpeg"></div>
-  <div class="slide"><img src="images/slider1.jpg"></div>
-  <div class="slide"><img src="images/slider2.jpg"></div>
-  <div class="slide"><img src="images/slider3.jpg"></div>
-  <div class="slide"><img src="images/slider1.jpeg"></div>
-  <div class="slide"><img src="images/slider2.jpg"></div>
-  <div class="slide"><img src="images/slider1.jpg"></div>
-  <div class="slide"><img src="images/slider3.jpg"></div>
-</div>
-
-
-
-    <!-- <div class="description-container">
-
-      <p id="description"></p>
-    </div> -->
-  </div>
-
-  <div class="col-md-2"></div>
-</div>
-</div>
-<br>
-<br>
 <h2 style="text-align:center">Motorman</h2>
 
 <div class="container">
@@ -535,19 +463,19 @@ div.slide.slick-slide.slick-active {
 
 
     <div class="column">
-      <img class="demo1 cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(1)" alt="The Woods" longdesc=" 1 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
+      <img class="demo1 cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(1)" alt="The Woods" longdesc=" 1 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/logo_techcrane.jpg, images/logo_benelec.png, images/logo_motorman.jpg, logo_hadef.png">
     </div>
     <div class="column">
-      <img class="demo1 cursor" src="images/slider1.jpg" style="width:100%; height: 100%;" onclick="currentSlide(2)" alt="Trolltunga, Norway" longdesc=" 2 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
+      <img class="demo1 cursor" src="images/slider1.jpg" style="width:100%; height: 100%;" onclick="currentSlide(2)" alt="Trolltunga, Norway" longdesc=" 2 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/products/benelec/automation.png, images/products/benelec/bespoke.png, images/products/benelec/cranes.png, images/products/benelec/hazardous.png">
     </div>
     <div class="column">
-      <img class="demo1 cursor" src="images/slider2.jpg" style="width:100%; height: 100%;" onclick="currentSlide(3)" alt="Mountains and fjords" longdesc=" 3 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
+      <img class="demo1 cursor" src="images/slider2.jpg" style="width:100%; height: 100%;" onclick="currentSlide(3)" alt="Mountains and fjords" longdesc=" 3 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/products/techcrane/fixed/1.png, images/products/techcrane/fixed/2.png, images/products/techcrane/fixed/3.png, images/products/techcrane/fixed/4.png">
     </div>
     <div class="column">
-      <img class="demo1 cursor" src="images/slider3.jpg" style="width:100%; height: 100%;" onclick="currentSlide(4)" alt="Northern Lights" longdesc=" 4 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
+      <img class="demo1 cursor" src="images/slider3.jpg" style="width:100%; height: 100%;" onclick="currentSlide(4)" alt="Northern Lights" longdesc=" 4 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/products/techcrane/lattice/1.png, images/products/techcrane/lattice/2.png, images/products/techcrane/lattice/3.png, images/products/techcrane/lattice/4.png">
     </div>
     <div class="column">
-      <img class="demo1 cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(5)" alt="Nature and sunrise" longdesc=" 5 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
+      <img class="demo1 cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(5)" alt="Nature and sunrise" longdesc=" 5 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/logo_techcrane.jpg, images/logo_benelec.png, images/logo_motorman.jpg, logo_hadef.png">
     </div>
     <!-- <div class="column">
       <img class="demo cursor" src="images/slider1.jpg" style="width:100%; height: 100%; border: 4px solid #2f3542;" onclick="currentSlide(6)" alt="Snowy Mountains" longdesc=" 6 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
@@ -606,16 +534,154 @@ div.slide.slick-slide.slick-active {
   <div class="mover-2"></div>
 </div> -->
 
-<div class="customer-logos">
-  <div class="slide1"><img src="images/slider1.jpeg"></div>
-  <div class="slide1"><img src="images/slider1.jpg"></div>
-  <div class="slide1"><img src="images/slider2.jpg"></div>
-  <div class="slide1"><img src="images/slider3.jpg"></div>
-  <div class="slide1"><img src="images/slider1.jpeg"></div>
-  <div class="slide1"><img src="images/slider2.jpg"></div>
-  <div class="slide1"><img src="images/slider1.jpg"></div>
-  <div class="slide1"><img src="images/slider3.jpg"></div>
+<div class="images-logo">
+
+    <div class="image_container">
+      <img src="images/slider1.jpeg" class="image1" />
+      <span>Label 1</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider2.jpg" class="image1" />
+      <span>Label 2</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider3.jpg" class="image1" />
+      <span>Label 3</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider1.jpeg" class="image1" />
+      <span>Label 4</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider2.jpg" class="image1" />
+      <span>Label 5</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider3.jpg" class="image1" />
+      <span>Label 6</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
 </div>
+
+
+
+<div class="images-logo">
+
+    <div class="image_container">
+      <img src="images/logo_hadef.png" class="image2" />
+      <span>Label 1</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_benelec.png" class="image2" />
+      <span>Label 2</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_motorman.jpg" class="image2" />
+      <span>Label 3</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_techcrane.jpg" class="image2" />
+      <span>Label 4</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_hadef.png" class="image2" />
+      <span>Label 5</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_techcrane.jpg" class="image2" />
+      <span>Label 6</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+</div>
+
+
+<!-- <div class="images-logo">
+
+    <div class="image_container">
+      <img src="images/slider1.jpeg" class="image1" />
+      <span>Label 1</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider2.jpg" class="image1" />
+      <span>Label 2</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider3.jpg" class="image1" />
+      <span>Label 3</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider1.jpeg" class="image1" />
+      <span>Label 4</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider2.jpg" class="image1" />
+      <span>Label 5</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider3.jpg" class="image1" />
+      <span>Label 6</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+</div> -->
+  <!-- <div class="slide1"><img src="images/slider1.jpg"></div>
+  <div class="slide1"><img src="images/slider2.jpg"></div>
+  <div class="slide1"><img src="images/slider3.jpg"></div>
+  <div class="slide1"><img src="images/slider1.jpeg"></div>
+  <div class="slide1"><img src="images/slider2.jpg"></div>
+  <div class="slide1"><img src="images/slider1.jpg"></div>
+  <div class="slide1"><img src="images/slider3.jpg"></div> -->
+
 
 
 
@@ -649,6 +715,9 @@ var slides = document.getElementsByClassName("mySlides");
 // var description = document.getElementsByClassName("mySlides");
 
 var dots = document.getElementsByClassName("demo");
+var scrolling_image = document.getElementsByClassName("image_container");
+
+
 
 // var desc = document.getElementsByClassName("demo");
 
@@ -670,6 +739,18 @@ for (i = 0; i < dots.length; i++) {
 
 }
 
+for (i = 0; i < dots.length; i++) {
+    var image = dots[slideIndex-1].getAttribute("srcset");
+
+}
+
+console.log(a);
+
+// for (i = 0; i < dots.length; i++) {
+//     var a = dots[slideIndex-1].getAttribute("longdesc");
+//
+// }
+
 // for (i = 0; i < slides.length; i++) {
 //     slides[i].style.display = "none";
 // }
@@ -688,6 +769,7 @@ slides[slideIndex-1].style.display = "block";
 captionText.innerHTML = dots[slideIndex-1].alt;
 // console.log(a);
 descriptionText.innerHTML= a;
+scrolling_image.innerHTML = image;
 
 }
 
@@ -696,18 +778,18 @@ descriptionText.innerHTML= a;
 
 <script>
 $(document).ready(function(){
-			$('.customer-logos').slick({
-				slidesToShow: 4,
+			$('.images-logo').slick({
+				slidesToShow: 2,
 				slidesToScroll: 1,
-				autoplay: true,
+				autoplay: false,
 				autoplaySpeed: 1000,
-				arrows: false,
+				arrows: true,
 				dots: false,
 					pauseOnHover: false,
 					responsive: [{
 					breakpoint: 768,
 					settings: {
-						slidesToShow: 3
+						slidesToShow: 1
 					}
 				}, {
 					breakpoint: 520,
@@ -783,5 +865,13 @@ descriptionText1.innerHTML= a;
 
 
 </script>
+
+// <script>
+// // $("#sub_im").attr("src","second.jpg");
+// $('.image_container').each(function(){
+//       //Change the src of each img
+//       $(this).attr('src', 'images/fixed.png');
+// });
+// </script>
 </body>
 </html>
