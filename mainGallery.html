@@ -6,17 +6,17 @@
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic|Roboto+Condensed" rel="stylesheet" type="text/css" />
+<!-- <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <link rel="stylesheet" href="css/swiper.css" type="text/css" />
 <link rel="stylesheet" href="css/dark.css" type="text/css" />
 <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 <link rel="stylesheet" href="css/animate.css" type="text/css" />
-<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" /> -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
-<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+<!-- <link rel="stylesheet" href="css/responsive.css" type="text/css" /> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,42 +25,55 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+
 
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/js/lightslider.min.js"></script> -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+/*
+@import "compass/css3";
+
+@import "compass/reset/utilities";
+
+@include global-reset;
+
+@import url(https://fonts.googleapis.com/css?family=Lustria|Lato:300);
+
+$title_font: 'Lustria', serif;
+$base_font: 'Lato', sans-serif;
+$dark: #222222;
+$clouds: #eeeeee;
+$grey: #999999; */
 body {
 font-family: Arial;
 margin: 0;
 }
-
 * {
 box-sizing: border-box;
 }
-
 img {
 vertical-align: middle;
 /* max-width: 100%;
     height: auto; */
 }
-
 /* Position the image container (needed to position the left and right arrows) */
 .container {
 position: relative;
 }
-
 /* Hide the images by default */
 .mySlides {
 display: none;
 }
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
 cursor: pointer;
 }
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -77,20 +90,17 @@ border-radius: 0 3px 3px 0;
 user-select: none;
 -webkit-user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
 right: 0;
 border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
 background-color: rgba(0, 0, 0, 0.8);
 /* border: 4px solid #2f3542; */
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
 color: #f2f2f2;
@@ -99,52 +109,46 @@ padding: 8px 12px;
 position: absolute;
 top: 0;
 }
-
 /* Container for image text */
 .caption-container {
 text-align: center;
-background-color: #222;
+background-color: #6a89cc;
 padding: 2px 16px;
-color: white;
+color: #dfe4ea;
 }
-
 #description {
   text-align: center;
   /* background-color: #bfbfbf; */
   padding: 2px 16px;
   color: white;
-
 }
-
 .row:after {
 content: "";
 display: table;
 clear: both;
 }
-
 /* Six columns side by side */
 .column {
 /* float: left;
 width: 16.66%; */
-
-    width: 150px;
-    height: 120px;
+    width: 287px;
+    height: 160px;
     /* height: auto; */
     float: left;
+    padding: 20px;
+    background-color: #eceff1;
+
     /* margin: 3px; */
     /* padding: 10px; */
 }
-
 /* Add a transparency effect for thumnbail images */
 .demo {
 opacity: 0.6;
 }
-
 .active,
 .demo:hover {
 opacity: 1;
 }
-
 .tech-slideshow {
   height: 200px;
   max-width: 800px;
@@ -153,7 +157,6 @@ opacity: 1;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
 }
-
 .tech-slideshow > div {
   height: 200px;
   width: 2526px;
@@ -176,49 +179,38 @@ opacity: 1;
 .tech-slideshow:hover .mover-2 {
   opacity: 1;
 }
-
 @keyframes moveSlideshow {
   100% {
     transform: translateX(-66.6666%);
   }
 }
-
-
 /* Slider */
 .slick-slide {
     /* margin: 0px 20px; */
 }
-
 .slick-slide img {
     width: 100%;
 }
-
 .slick-slider
 {
     position: relative;
-
     display: block;
     box-sizing: border-box;
-
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-
 .slick-list
 {
     position: relative;
-
     display: block;
     overflow: hidden;
-
     margin: 0;
     padding: 0;
 }
@@ -231,7 +223,6 @@ opacity: 1;
     cursor: pointer;
     cursor: hand;
 }
-
 .slick-slider .slick-track,
 .slick-slider .slick-list
 {
@@ -241,20 +232,17 @@ opacity: 1;
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 }
-
 .slick-track
 {
     position: relative;
     top: 0;
     left: 0;
-
     display: block;
 }
 .slick-track:before,
 .slick-track:after
 {
     display: table;
-
     content: '';
 }
 .slick-track:after
@@ -265,12 +253,10 @@ opacity: 1;
 {
     visibility: hidden;
 }
-
 .slick-slide
 {
     display: none;
     float: left;
-
     /* height: 100%; */
     min-height: 1px;
 }
@@ -302,32 +288,24 @@ opacity: 1;
 .slick-vertical .slick-slide
 {
     display: block;
-
     height: auto;
-
     border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
     display: none;
 }
-
 div.slide.slick-slide.slick-active {
-  height: 500px;
+  height: 450px;;
 }
-
-
 .image_container {
   position: relative;
-
   width: 50%;
 }
-
 .image {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -342,11 +320,9 @@ div.slide.slick-slide.slick-active {
   padding: 20px;
   text-align: center;
 }
-
 .image_container:hover .overlay {
   opacity: 3;
 }
-
 .text {
   color: white;
   font-size: 20px;
@@ -357,7 +333,6 @@ div.slide.slick-slide.slick-active {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .image_container span {
     position: absolute;
     left: 10px;
@@ -373,11 +348,396 @@ div.slide.slick-slide.slick-active {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 } */
+
+/* #separator {
+	background-color: #bfbfbf;
+	padding: 10px;
+} */
+
+#products {
+background-color: #bfbfbf;
+	padding: 10px;
+}
+
+
+
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
+  padding: 20px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin: 0px;
+
+}
+
+h2 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 30px;
+    padding: 10px 10px;
+    /* text-align: center; */
+    color: white;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 8px;
+}
+
+h3 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
+  padding: 10px 10px;
+  /* text-align: center; */
+  color: white;
+  text-transform: uppercase;
+font-family: 'Roboto Condensed', sans-serif;
+  text-rendering: optimizeLegibility;
+
+  margin: 0px;
+
+}
+
+  .elegantshadow {
+    color: #131313;
+    background-color: #e7e5e4;
+    letter-spacing: .15em;
+    text-shadow:
+      1px -1px 0 #767676,
+      -1px 2px 1px #737272,
+      -2px 4px 1px #767474,
+      -3px 6px 1px #787777,
+      -4px 8px 1px #7b7a7a,
+      -5px 10px 1px #7f7d7d,
+      -6px 12px 1px #828181,
+      -7px 14px 1px #868585,
+      -8px 16px 1px #8b8a89,
+      -9px 18px 1px #8f8e8d,
+      -10px 20px 1px #949392,
+      -11px 22px 1px #999897,
+      -12px 24px 1px #9e9c9c,
+      -13px 26px 1px #a3a1a1,
+      -14px 28px 1px #a8a6a6,
+      -15px 30px 1px #adabab,
+      -16px 32px 1px #b2b1b0,
+      -17px 34px 1px #b7b6b5,
+      -18px 36px 1px #bcbbba,
+      -19px 38px 1px #c1bfbf,
+      -20px 40px 1px #c6c4c4,
+      -21px 42px 1px #cbc9c8,
+      -22px 44px 1px #cfcdcd,
+      -23px 46px 1px #d4d2d1,
+      -24px 48px 1px #d8d6d5,
+      -25px 50px 1px #dbdad9,
+      -26px 52px 1px #dfdddc,
+      -27px 54px 1px #e2e0df,
+      -28px 56px 1px #e4e3e2;
+  }
+  .deepshadow {
+    color: #e0dfdc;
+    background-color: rgba(41,77,137,0.9);
+    letter-spacing: .1em;
+    /* text-shadow:
+      0 -1px 0 #fff,
+      0 1px 0 #2e2e2e,
+      0 2px 0 #2c2c2c,
+      0 3px 0 #2a2a2a,
+      0 4px 0 #282828,
+      0 5px 0 #262626,
+      0 6px 0 #242424,
+      0 7px 0 #222,
+      0 8px 0 #202020,
+      0 9px 0 #1e1e1e,
+      0 10px 0 #1c1c1c,
+      0 11px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 13px 0 #161616,
+      0 14px 0 #141414,
+      0 15px 0 #121212,
+      0 22px 30px rgba(0, 0, 0, 0.9); */
+  }
+  .insetshadow {
+    color: #ffffff;
+    background-color: #2f3542;
+    /* letter-spacing: .1em; */
+    text-shadow:
+      -1px -1px 1px #111,
+      2px 2px 1px #363636;
+  }
+  .retroshadow {
+    color: #2c2c2c;
+    background-color: #d5d5d5;
+    letter-spacing: .05em;
+    text-shadow:
+      4px 4px 0px #d5d5d5,
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+  .allblur
+  	{
+  		/* width:350px;height:200px; */
+  		/* border: solid 1px #555;
+  		background-color: #eed;
+  		box-shadow:  0 0 10px 5px rgba(0,0,0,0.6);
+  		-moz-box-shadow: 0 0 10px  5px rgba(0,0,0,0.6);
+  		-webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);
+  		-o-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6); */
+      -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+  	}
+
+    .effect8
+    {
+      	position:relative;
+        -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px #2d2d2d inset;
+           -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px #2d2d2d inset;
+                box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px #2d2d2d inset;
+    }
+    /* .effect8:before, .effect8:after
+    {
+    	content:"";
+        position:absolute;
+        z-index:-1;
+        -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+        -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+        box-shadow:0 0 20px rgba(0,0,0,0.8);
+        top:10px;
+        bottom:10px;
+        left:0;
+        right:0;
+        -moz-border-radius:100px / 10px;
+        border-radius:100px / 10px;
+    } */
+    /* .effect8:after
+    {
+    	right:10px;
+        left:auto;
+        -webkit-transform:skew(8deg) rotate(3deg);
+           -moz-transform:skew(8deg) rotate(3deg);
+            -ms-transform:skew(8deg) rotate(3deg);
+             -o-transform:skew(8deg) rotate(3deg);
+                transform:skew(8deg) rotate(3deg);
+    } */
+
+    .mySlidesImage {
+      position: relative;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: #ffeaa7;
+      padding: 40px;
+
+    }
+
+
+    ul {
+  width: 100%;
+  overflow: hidden;
+  li {
+    position: relative;
+    cursor: pointer;
+    .overlay {
+      opacity: 0.4;
+      background: #000;
+      display: blocK;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 8;
+
+    }
+    .info {
+      position: relative;
+      width: 100%;
+      z-index: 999;
+      color: #000;
+      display: block;
+      text-align:center;
+      padding: 30px 20px 20px;
+      /* @include box-sizing(border-box); */
+    }
+
+      p {
+        font-family: $base_font;
+        font-size: 18px;
+        line-height: 30px;
+        padding-bottom: 20px;
+      }
+      /* .btn {
+       line-height: 30px;
+       display: inline-block;
+       padding: 0 10px;
+       border: 1px solid #fff;
+       font-size: 14px;
+       text-transform: uppercase;
+       text-decoration: none;
+       color: #fff;
+       font-family: $base_font;
+       background-color: black;
+       margin-bottom: 20px;
+      } */
+      .description {
+        display: none;
+      }
+
+
+    }
+
+    /* .bg-img {
+      img {
+        position: absolute;
+        //width: 100%;
+        //height: auto;
+        top:0;
+        min-width: 100%;
+        min-height: 100%;
+      }
+    } */
+  }
+
+
+/* #mybtn {
+ line-height: 30px;
+ display: inline-block;
+ padding: 0 10px;
+ border: 1px solid #fff;
+ font-size: 14px;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: #fff;
+ font-family: $base_font;
+ background-color: black;
+ margin-bottom: 20px;
+ background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+} */
+
+
+
+/* #mybtn {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    /* transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}  */
+
+/* #mybtn:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+} */
+
+/* #mybtn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+} */
+
+#caption1 {
+font-size: 30px;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+span {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  color: white;
+  border: 1px solid #ffffff;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li a:hover {
+  color: #bfbfbf;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #57606f;
+}
+
+nav .brand-logo {
+  padding-left: 20px;
+}
+nav .brand-logo:hover {
+  text-decoration: none;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+
+}
+
+.col-md-8 {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #4b6584;
+}
+
+.imageBorder {
+  border: 2px solid #2f3542;
+  background-color: #ffda79;
+}
+
+.card-panel {
+  margin: 0px;
+}
+
+.btn {
+  color: #ff7f50;
+  border: 2px solid #ff7f50;
+  background-color: #dfe4ea;
+
+}
+
 </style>
 </head>
 
 <body>
 
+
+  <header>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Photon</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+<!--
   <header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
 
 		<div id="header-wrap">
@@ -386,54 +746,61 @@ div.slide.slick-slide.slick-active {
 
 				<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-				<!-- Logo
+				<!- Logo
                 ============================================= -->
-				<div id="logo">
+				<!-- div id="logo">
                     <h2 style="margin-top: 3px; font-weight: bolder; font-size: px; font-family: 'Exo 2', sans-serif;">Photon Offshore</h2>
 										<h4 style="font-size: 15px; font-family: 'Gugi', sans-serif; text-align: center; "> Material Handing Solutions</h4>
 
-										<!-- <img src="images/logo_new.jpg" class="img-responsive"/> -->
+										<!- <img src="images/logo_new.jpg" class="img-responsive"/> -->
 
-				</div><!-- #logo end -->
+			<!--	</div> --> <!-- #logo end -->
 
 				<!-- Primary Navigation
                 ============================================= -->
-				<nav id="primary-menu" class="dark">
+			<!-- 	<nav id="primary-menu" class="dark">
 
 					<ul>
 						<li class="current"><a href="index.html"><div>Home</div></a></li>
 						<li><a href="#"><div>Products</div></a></li>
             <li><a href="#"><div>Contact Us</div></a></li>
 						<li><a href="services.html"><div>About Us</div></a></li>
-						<!-- <li><a href="#"><div>Contact</div></a></li> -->
+						<!- <li><a href="#"><div>Contact</div></a></li> -->
 
 
-					</ul>
-				</nav>
-
-				<!-- <nav id="primary-menu" class="dark">
+				<!-- 	</ul>
+				</nav> -->
+ 		<!-- <nav id="primary-menu" class="dark">
 				<ul>
 					<li>				<a href="#">Email: info@photonoffshore.com</a>
 					</li>
 				</ul>
 			</nav> -->
-
+<!--
 			</div>
 
 		</div>
 
 	</header>
+  -->
+  <!-- %h1.elegantshadow Motorman
+  %h1.deepshadow Motorman
+  %h1.insetshadow Motorman
+  %h1.retroshadow Motorman -->
 
 
 
-<h2 style="text-align:center">Motorman</h2>
 
 <div class="container">
 
+
 <div class="row">
+
+
   <div class="col-md-2"></div>
 
-  <div class="col-md-8">
+  <div class="col-md-8" style="border: 1.5px solid #bdbdbd; margin-top: 10px;">
+    <h1 style="text-align:center; margin-top: 8px;" class="deepshadow">Motorman</h1>
 <!--
 	<div class="description">
 	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
@@ -459,24 +826,24 @@ div.slide.slick-slide.slick-active {
 	</p>	</div>
    -->
 
+<h2 class="insetshadow">Products</h2>
 
 
-
-    <div class="column">
-      <img class="demo1 cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(1)" alt="The Woods" longdesc=" 1 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/logo_techcrane.jpg, images/logo_benelec.png, images/logo_motorman.jpg, logo_hadef.png">
+    <div class="column  z-depth-2">
+      <img class="demo1 cursor" id = "a1" src="http://motorman.es/media/1249/b%C3%A1scula.png?anchor=center&mode=crop&width=458&height=458&rnd=131352562760000000" style="width:100%; height: 100%;" onclick="currentSlide(1)" alt="The Woods" longdesc=" 1 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
     </div>
-    <div class="column">
-      <img class="demo1 cursor" src="images/slider1.jpg" style="width:100%; height: 100%;" onclick="currentSlide(2)" alt="Trolltunga, Norway" longdesc=" 2 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/products/benelec/automation.png, images/products/benelec/bespoke.png, images/products/benelec/cranes.png, images/products/benelec/hazardous.png">
+    <div class="column  z-depth-2">
+      <img class="demo1 cursor" id = "a2" src="http://motorman.es/media/2041/carro-filoguiado.png?anchor=center&mode=crop&width=458&height=458&rnd=131423482210000000" style="width:100%; height: 100%;" onclick="currentSlide(2)" alt="Trolltunga, Norway" longdesc=" 2 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
     </div>
-    <div class="column">
-      <img class="demo1 cursor" src="images/slider2.jpg" style="width:100%; height: 100%;" onclick="currentSlide(3)" alt="Mountains and fjords" longdesc=" 3 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/products/techcrane/fixed/1.png, images/products/techcrane/fixed/2.png, images/products/techcrane/fixed/3.png, images/products/techcrane/fixed/4.png">
+    <div class="column  z-depth-2">
+      <img class="demo1 cursor"  id = "a3" src="http://motorman.es/media/1721/prensado-juntas.png?anchor=center&mode=crop&width=458&height=458&rnd=131420856530000000" style="width:100%; height: 100%;" onclick="currentSlide(3)" alt="Mountains and fjords" longdesc=" 3 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
     </div>
-    <div class="column">
-      <img class="demo1 cursor" src="images/slider3.jpg" style="width:100%; height: 100%;" onclick="currentSlide(4)" alt="Northern Lights" longdesc=" 4 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/products/techcrane/lattice/1.png, images/products/techcrane/lattice/2.png, images/products/techcrane/lattice/3.png, images/products/techcrane/lattice/4.png">
+    <!-- <div class="column  z-depth-2">
+      <img class="demo1 cursor" id = "a4" src="http://motorman.es/media/2145/din-40-2-micro-sin-fondo-def.png?anchor=center&mode=crop&width=458&height=458&rnd=131611016930000000" style="width:100%; height: 100%;" onclick="currentSlide(4)" alt="Northern Lights" longdesc=" 4 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
     </div>
-    <div class="column">
-      <img class="demo1 cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(5)" alt="Nature and sunrise" longdesc=" 5 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/logo_techcrane.jpg, images/logo_benelec.png, images/logo_motorman.jpg, logo_hadef.png">
-    </div>
+    <div class="column  z-depth-2">
+      <img class="demo1 cursor" id = "a5" src="http://motorman.es/media/2150/lce6002x.png?anchor=center&mode=crop&width=458&height=458&rnd=131611012390000000" style="width:100%; height: 100%;" onclick="currentSlide(5)" alt="Nature and sunrise" longdesc=" 5 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
+    </div> -->
     <!-- <div class="column">
       <img class="demo cursor" src="images/slider1.jpg" style="width:100%; height: 100%; border: 4px solid #2f3542;" onclick="currentSlide(6)" alt="Snowy Mountains" longdesc=" 6 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
     </div> -->
@@ -486,30 +853,32 @@ div.slide.slick-slide.slick-active {
 
 
 
+
+
        <div class="mySlides1">
-        <div class="numbertext">1 / 6</div>
-        <img src="images/slider1.jpeg" style="width:100%; height: 300px;">
+        <div class="numbertext">1 / 3</div>
+        <img class="mySlidesImage card-panel hoverable" src="http://motorman.es/media/1249/b%C3%A1scula.png?anchor=center&mode=crop&width=458&height=458&rnd=131352562760000000" style="width:100%; height: 450px;;">
        </div>
 
        <div class="mySlides1">
-        <div class="numbertext">2 / 6</div>
-        <img src="images/slider1.jpg" style="width:100%;  height: 300px;">
+        <div class="numbertext">2 / 3</div>
+        <img class="mySlidesImage z-depth-1" src="http://motorman.es/media/2041/carro-filoguiado.png?anchor=center&mode=crop&width=458&height=458&rnd=131423482210000000" style="width:100%;  height: 450px;;">
        </div>
 
        <div class="mySlides1">
-        <div class="numbertext">3 / 6</div>
-        <img src="images/slider2.jpg" style="width:100%; height: 300px;">
+        <div class="numbertext">3 / 3</div>
+        <img class="mySlidesImage z-depth-1" src="http://motorman.es/media/1721/prensado-juntas.png?anchor=center&mode=crop&width=458&height=458&rnd=131420856530000000" style="width:100%; height: 450px;;">
        </div>
 
-       <div class="mySlides1">
+       <!-- <div class="mySlides1">
         <div class="numbertext">4 / 6</div>
-        <img src="images/slider3.jpg" style="width:100%; height: 300px;">
+        <img class="mySlidesImage z-depth-1" src="http://motorman.es/media/2145/din-40-2-micro-sin-fondo-def.png?anchor=center&mode=crop&width=458&height=458&rnd=131611016930000000" style="width:100%; height: 450px;;">
        </div>
 
        <div class="mySlides1">
         <div class="numbertext">5 / 6</div>
-        <img src="images/slider1.jpeg" style="width:100%; height: 300px;">
-       </div>
+        <img class="mySlidesImage z-depth-1" src="http://motorman.es/media/2150/lce6002x.png?anchor=center&mode=crop&width=458&height=458&rnd=131611012390000000" style="width:100%; height: 450px;;">
+       </div> -->
 
        <!-- <div class="mySlides">
         <div class="numbertext">6 / 6</div>
@@ -527,52 +896,118 @@ div.slide.slick-slide.slick-active {
 
     <div class="caption-container">
       <div id="caption1"></div>
-      <div id="description1"></div>
+      <div>
+        <ul class="gallery">
+          <li>
+           <div class="overlay"></div>
+           <div class="info">
+            <!-- <h2>Blanche J. Christie</h2>
+
+            <p>Welcome to my amazing world of photos</p> -->
+
+            <a href="#"  class="waves-effect waves-light btn">See Description</a>
+
+          <div class="description">
+             <p id="description1">
+               Pork belly Carles Wes Anderson semiotics, Thundercats Truffaut iPhone chambray blog normcore direct trade Pinterest gentrify. Pinterest gentrify fanny pack Truffaut, bitters brunch hella kogi craft beer readymade. Synth whatever trust fund Marfa before they sold out, chillwave lomo. Bespoke polaroid Williamsburg, jean shorts literally Etsy Banksy Intelligentsia. Organic Brooklyn shabby chic ennui semiotics, brunch Tumblr mustache Helvetica PBR&B. Literally fanny pack scenester sartorial selfies post-ironic flexitarian tattooed, pork belly hashtag Vice fingerstache squid hella.
+             </p>
+           </div><!-- /.description-->
+          </div><!--/.info -->
+          <!-- <div class="bg-img">
+            <img src="https://unsplash.it/1000/400?image=523">
+          </div> -->
+        </li>
+      </ul>
     </div>
+    </div>
+
     <!-- <div class="tech-slideshow">
   <div class="mover-1"></div>
   <div class="mover-2"></div>
 </div> -->
 
-<div class="images-logo">
+
+  <!--  <div class="row">
+   <div class="column1">
+		<img src="images/logo_techcrane.jpg"  />
+		<img src="images/logo_benelec.png" />
+		<img src="images/logo_motorman.jpg" />
+		<img src="images/logo_hadef.png" />
+		<img src="images/logo_techcrane.jpg" />
+
+   </div>
+    <div class="column1">
+		<img src="images/products/benelec/hazardous.png" />
+		<img src="images/products/benelec/cranes.png" />
+		<img src="images/products/benelec/bespoke.png" />
+		<img src="images/products/benelec/automation.png" />
+		<img src="images/logo_techcrane.jpg" />
+
+   </div>
+    <div class="column1">
+		<img src="images/products/techcrane/fixed/1.png" />
+		<img src="images/products/techcrane/fixed/2.png" />
+		<img src="images/products/techcrane/fixed/3.png" />
+		<img src="images/products/techcrane/fixed/4.png" />
+		<img src="images/products/techcrane/fixed/2.png" />
+
+   </div>
+    <div class="column1">
+		<img src="images/products/techcrane/lattice/1.png" />
+		<img src="images/products/techcrane/lattice/2.png" />
+		<img src="images/products/techcrane/lattice/3.png" />
+		<img src="images/products/techcrane/lattice/4.png" />
+		<img src="images/products/techcrane/lattice/2.png" />
+
+   </div>
+   </div> -->
+<div id="separator">
+<h3 class="insetshadow">Configuration</h3>
+</div>
+
+
+
+
+
+<div class="images-logo" style="margin-bottom: 8px;">
 
     <div class="image_container">
-      <img src="images/slider1.jpeg" class="image1" />
+      <img src="http://motorman.es/media/1582/balanc%C3%ADn-giratorio1.png?anchor=center&mode=crop&width=458&height=458&rnd=131299276120000000" class="image1 imageBorder" id="i1" />
       <span>Label 1</span>
       <div class="overlay">
         <div class="text">Hello World</div>
       </div>
     </div>
     <div class="image_container">
-      <img src="images/slider2.jpg" class="image1" />
+      <img src="http://motorman.es/media/1526/tp.png?anchor=center&mode=crop&width=458&height=458&rnd=131352572360000000" class="image2 imageBorder" id="i2" />
       <span>Label 2</span>
       <div class="overlay">
         <div class="text">Hello World</div>
       </div>
     </div>
     <div class="image_container">
-      <img src="images/slider3.jpg" class="image1" />
+      <img src="http://motorman.es/media/1533/mkx-inferior-def.png?anchor=center&mode=crop&width=458&height=458&rnd=131429619810000000" class="image3 imageBorder" id="i3" />
       <span>Label 3</span>
       <div class="overlay">
         <div class="text">Hello World</div>
       </div>
     </div>
     <div class="image_container">
-      <img src="images/slider1.jpeg" class="image1" />
+      <img src="http://motorman.es/media/1535/des-45-def.png?anchor=center&mode=crop&width=458&height=458&rnd=131429620360000000" class="image4 imageBorder" id="i4"  />
       <span>Label 4</span>
       <div class="overlay">
         <div class="text">Hello World</div>
       </div>
     </div>
     <div class="image_container">
-      <img src="images/slider2.jpg" class="image1" />
+      <img src="http://motorman.es/media/2150/lce6002x.png?anchor=center&mode=crop&width=458&height=458&rnd=131611012390000000" class="image5 imageBorder" id="i5"  />
       <span>Label 5</span>
       <div class="overlay">
         <div class="text">Hello World</div>
       </div>
     </div>
     <div class="image_container">
-      <img src="images/slider3.jpg" class="image1" />
+      <img src="http://motorman.es/media/2145/din-40-2-micro-sin-fondo-def.png?anchor=center&mode=crop&width=458&height=458&rnd=131611016930000000" class="image6 imageBorder" id="i6"  />
       <span>Label 6</span>
       <div class="overlay">
         <div class="text">Hello World</div>
@@ -581,11 +1016,11 @@ div.slide.slick-slide.slick-active {
 </div>
 
 
-
+<!--
 <div class="images-logo">
 
     <div class="image_container">
-      <img src="images/logo_hadef.png" class="image2" />
+      <img src="images/logo_hadef.png" class="image2" id ="i1" />
       <span>Label 1</span>
       <div class="overlay">
         <div class="text">Hello World</div>
@@ -627,10 +1062,9 @@ div.slide.slick-slide.slick-active {
       </div>
     </div>
 </div>
-
+ -->
 
 <!-- <div class="images-logo">
-
     <div class="image_container">
       <img src="images/slider1.jpeg" class="image1" />
       <span>Label 1</span>
@@ -686,7 +1120,6 @@ div.slide.slick-slide.slick-active {
 
 
     <!-- <div class="description-container">
-
       <p id="description"></p>
     </div> -->
   </div>
@@ -696,94 +1129,15 @@ div.slide.slick-slide.slick-active {
 </div>
 
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-showSlides(slideIndex = n);
-
-}
-
-function showSlides(n) {
-var i;
-var slides = document.getElementsByClassName("mySlides");
-// var description = document.getElementsByClassName("mySlides");
-
-var dots = document.getElementsByClassName("demo");
-var scrolling_image = document.getElementsByClassName("image_container");
-
-
-
-// var desc = document.getElementsByClassName("demo");
-
-var captionText = document.getElementById("caption");
-var descriptionText = document.getElementById("description");
-
-if (n > slides.length) {slideIndex = 1}
-// if (n > description.length) {slideIndex = 1}
-
-if (n < 1) {slideIndex = slides.length}
-// if (n < 1) {slideIndex = description.length}
-
-for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-
-for (i = 0; i < dots.length; i++) {
-    var a = dots[slideIndex-1].getAttribute("longdesc");
-
-}
-
-for (i = 0; i < dots.length; i++) {
-    var image = dots[slideIndex-1].getAttribute("srcset");
-
-}
-
-console.log(a);
-
-// for (i = 0; i < dots.length; i++) {
-//     var a = dots[slideIndex-1].getAttribute("longdesc");
-//
-// }
-
-// for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-// }
-<!-- for (i = 0; i < dots.length; i++) {
-    <!-- dots[ --><!-- i].className = dots[i].className.replace(" active", "");
- --> -->
-// for (i = 0; i < desc.length; i++) {
-//     desc[i].className = desc[i].className.replace(" active", "");
-// }
-slides[slideIndex-1].style.display = "block";
-// description[slideIndex-1].style.display = "block";
-
-<!-- dots[slideIndex-1].className += " active"; -->
-// desc[slideIndex-1].className += " active";
-
-captionText.innerHTML = dots[slideIndex-1].alt;
-// console.log(a);
-descriptionText.innerHTML= a;
-scrolling_image.innerHTML = image;
-
-}
-
-
-</script>
 
 <script>
 $(document).ready(function(){
 			$('.images-logo').slick({
 				slidesToShow: 2,
 				slidesToScroll: 1,
-				autoplay: false,
-				autoplaySpeed: 1000,
-				arrows: true,
+				autoplay: true,
+				autoplaySpeed: 1500,
+				arrows: false,
 				dots: false,
 					pauseOnHover: false,
 					responsive: [{
@@ -800,48 +1154,135 @@ $(document).ready(function(){
 			});
 		});
 </script>
-
-
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
 showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
 showSlides(slideIndex = n);
+console.log(n);
+if(n ==1) {
+one();
+}
+else if(n ==2) {
+two();
+}
+else if(n ==3) {
+three();
+}
+else if(n ==4) {
+four();
+}
+else{
+five();
+}
+
+function one() {
+
+	var image_src = document.getElementById('a1').src;
+	console.log(image_src);
+	if(image_src == "http://motorman.es/media/1249/b%C3%A1scula.png?anchor=center&mode=crop&width=458&height=458&rnd=131352562760000000"){
+	console.log(document.getElementById('i2').src);
+		document.getElementById('i1').src = "http://motorman.es/media/1914/iphone-nuevas-hoy-148.jpg";
+		document.getElementById('i2').src = "http://motorman.es/media/1915/iphone-nuevas-hoy-152.jpg";
+		document.getElementById('i3').src = "http://motorman.es/media/1815/prova-mp6000.jpg";
+		document.getElementById('i4').src = "http://motorman.es/media/2167/twislock-pag-web2.png?anchor=center&mode=crop&width=458&height=458&rnd=131611032060000000";
+		document.getElementById('i5').src = "http://motorman.es/media/1844/img_0340.jpg";
+		document.getElementById('i6').src = "http://motorman.es/media/1378/tr%C3%B3cola-pesadora-02.jpg";
+	}
 
 }
 
+function two() {
+var image_src = document.getElementById('a2').src;
+	console.log(image_src);
+	if(image_src == "http://motorman.es/media/2041/carro-filoguiado.png?anchor=center&mode=crop&width=458&height=458&rnd=131423482210000000"){
+	console.log(document.getElementById('i2').src);
+		document.getElementById('i1').src = "http://motorman.es/media/1593/img_0263.jpg";
+		document.getElementById('i2').src = "http://motorman.es/media/1395/dsc_0140.jpg";
+		document.getElementById('i3').src = "http://motorman.es/media/1396/img_0062.jpg";
+		document.getElementById('i4').src = "http://motorman.es/media/1399/dsc_0001.jpg";
+		document.getElementById('i5').src = "http://motorman.es/media/1398/balanc%C3%ADn-grandes-cargas-01.jpg";
+		document.getElementById('i6').src = "http://motorman.es/media/1756/007.jpg";
+	}
+
+}
+
+function three() {
+var image_src = document.getElementById('a3').src;
+	console.log(image_src);
+	if(image_src == "http://motorman.es/media/1721/prensado-juntas.png?anchor=center&mode=crop&width=458&height=458&rnd=131420856530000000"){
+	console.log(document.getElementById('i3').src);
+		document.getElementById('i1').src = "http://motorman.es/media/1734/volteador-dovelas2.png?anchor=center&mode=crop&width=458&height=458&rnd=131352558160000000";
+		document.getElementById('i2').src = "http://motorman.es/media/1726/002.jpg";
+		document.getElementById('i3').src = "http://motorman.es/media/1732/img_3240.jpg";
+		document.getElementById('i4').src = "http://motorman.es/media/1730/img_3199.jpg";
+		document.getElementById('i5').src = "http://motorman.es/media/1727/003.jpg";
+		document.getElementById('i6').src = "http://motorman.es/media/1731/img_3202.jpg";
+	}
+
+}
+
+
+function four() {
+var image_src = document.getElementById('a4').src;
+	console.log(image_src);
+	if(image_src == "http://motorman.es/media/2145/din-40-2-micro-sin-fondo-def.png?anchor=center&mode=crop&width=458&height=458&rnd=131611016930000000"){
+	console.log(document.getElementById('i3').src);
+		document.getElementById('i1').src = "http://motorman.es/media/1869/img_1670.jpg";
+		document.getElementById('i2').src = "http://motorman.es/media/1872/001-def.jpg";
+		document.getElementById('i3').src = "http://motorman.es/media/1870/img_1674.jpg";
+		document.getElementById('i4').src = "http://motorman.es/media/1697/foto-pinza-para-traviesas.png?anchor=center&mode=crop&width=458&height=458&rnd=131388154840000000";
+		document.getElementById('i5').src = "http://motorman.es/media/1297/131.jpg";
+		document.getElementById('i6').src = "http://motorman.es/media/1691/002.jpg";
+	}
+
+}
+
+
+
+function five() {
+var image_src = document.getElementById('a5').src;
+	console.log(image_src);
+	if(image_src == "http://motorman.es/media/2150/lce6002x.png?anchor=center&mode=crop&width=458&height=458&rnd=131611012390000000"){
+	console.log(document.getElementById('i3').src);
+		document.getElementById('i1').src = "http://motorman.es/media/1677/sin-fondo-def.png?anchor=center&mode=crop&width=458&height=458&rnd=131352555010000000";
+		document.getElementById('i2').src = "http://motorman.es/media/1720/pinza-interior-def.png?anchor=center&mode=crop&width=458&height=458&rnd=131420925720000000";
+		document.getElementById('i3').src = "http://motorman.es/media/1698/pinza-portadovela-mec%C3%A1ncia.png?anchor=center&mode=crop&width=458&height=458&rnd=131242957840000000";
+		document.getElementById('i4').src = "http://motorman.es/media/1908/img_0249.jpg";
+		document.getElementById('i5').src = "http://motorman.es/media/1909/img_0250.jpg";
+		document.getElementById('i6').src = "http://motorman.es/media/1691/002.jpg";
+	}
+
+}
+
+
+
+
+
+
+
+}
 function showSlides(n) {
 var i;
 var slides1 = document.getElementsByClassName("mySlides1");
 // var description = document.getElementsByClassName("mySlides");
-
 var dots1 = document.getElementsByClassName("demo1");
-
 // var desc = document.getElementsByClassName("demo");
-
 var captionText1 = document.getElementById("caption1");
 var descriptionText1 = document.getElementById("description1");
-
 if (n > slides1.length) {slideIndex = 1}
 // if (n > description.length) {slideIndex = 1}
-
 if (n < 1) {slideIndex = slides1.length}
 // if (n < 1) {slideIndex = description.length}
-
 for (i = 0; i < slides1.length; i++) {
     slides1[i].style.display = "none";
 }
-
 for (i = 0; i < dots1.length; i++) {
     var a = dots1[slideIndex-1].getAttribute("longdesc");
-
 }
-
 // for (i = 0; i < slides.length; i++) {
 //     slides[i].style.display = "none";
 // }
@@ -853,19 +1294,58 @@ for (i = 0; i < dots1.length; i++) {
 // }
 slides1[slideIndex-1].style.display = "block";
 // description[slideIndex-1].style.display = "block";
-
 <!-- dots1[slideIndex-1].className += " active"; -->
 // desc[slideIndex-1].className += " active";
-
 captionText1.innerHTML = dots1[slideIndex-1].alt;
 // console.log(a);
 descriptionText1.innerHTML= a;
-
 }
-
-
 </script>
 
+<script>
+$(document).ready(function () {
+
+	//hide all descriptions
+	$('.description').hide();
+
+	function showFullHeight() {
+
+	   $('.gallery li').each(function() {
+
+
+	   	$(this).find('.btn').click(function(e){
+
+	   	// console.log('Botão clicado');
+
+	  	e.preventDefault();
+
+	  	 //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
+		 	$('.description').slideUp('normal');
+
+	     //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
+			if($(this).next().is(':hidden') == true) {
+
+				//ADD THE ON CLASS TO THE BUTTON
+				$(this).addClass('on');
+
+				//OPEN THE SLIDE
+				$(this).next().slideDown('normal');
+
+
+
+			 }
+
+	   }); //click
+	  });//each
+	}//function
+
+
+	//load the function when the doc is ready
+  showFullHeight();
+
+});
+
+</script>
 // <script>
 // // $("#sub_im").attr("src","second.jpg");
 // $('.image_container').each(function(){
@@ -873,5 +1353,7 @@ descriptionText1.innerHTML= a;
 //       $(this).attr('src', 'images/fixed.png');
 // });
 // </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
 </body>
 </html>

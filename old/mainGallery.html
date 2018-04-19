@@ -1,0 +1,877 @@
+<html>
+<head>
+<title>Image Gallery</title>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/css/lightslider.min.css"> -->
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+<link rel="stylesheet" href="css/dark.css" type="text/css" />
+<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+<link rel="stylesheet" href="css/animate.css" type="text/css" />
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css?family=Gugi|Orbitron|Exo+2:600" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/js/lightslider.min.js"></script> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial;
+margin: 0;
+}
+
+* {
+box-sizing: border-box;
+}
+
+img {
+vertical-align: middle;
+/* max-width: 100%;
+    height: auto; */
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+/* border: 4px solid #2f3542; */
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+#description {
+  text-align: center;
+  /* background-color: #bfbfbf; */
+  padding: 2px 16px;
+  color: white;
+
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+/* float: left;
+width: 16.66%; */
+
+    width: 150px;
+    height: 120px;
+    /* height: auto; */
+    float: left;
+    /* margin: 3px; */
+    /* padding: 10px; */
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+.tech-slideshow {
+  height: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 200px;
+  width: 2526px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 12s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+
+/* Slider */
+.slick-slide {
+    /* margin: 0px 20px; */
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    /* height: 100%; */
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+    height: 250px;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+div.slide.slick-slide.slick-active {
+  height: 500px;
+}
+
+
+.image_container {
+  position: relative;
+
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.image_container:hover .overlay {
+  opacity: 3;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image_container span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+/* .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} */
+</style>
+</head>
+
+<body>
+
+  <header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+
+		<div id="header-wrap">
+
+			<div class="container clearfix">
+
+				<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+				<!-- Logo
+                ============================================= -->
+				<div id="logo">
+                    <h2 style="margin-top: 3px; font-weight: bolder; font-size: px; font-family: 'Exo 2', sans-serif;">Photon Offshore</h2>
+										<h4 style="font-size: 15px; font-family: 'Gugi', sans-serif; text-align: center; "> Material Handing Solutions</h4>
+
+										<!-- <img src="images/logo_new.jpg" class="img-responsive"/> -->
+
+				</div><!-- #logo end -->
+
+				<!-- Primary Navigation
+                ============================================= -->
+				<nav id="primary-menu" class="dark">
+
+					<ul>
+						<li class="current"><a href="index.html"><div>Home</div></a></li>
+						<li><a href="#"><div>Products</div></a></li>
+            <li><a href="#"><div>Contact Us</div></a></li>
+						<li><a href="services.html"><div>About Us</div></a></li>
+						<!-- <li><a href="#"><div>Contact</div></a></li> -->
+
+
+					</ul>
+				</nav>
+
+				<!-- <nav id="primary-menu" class="dark">
+				<ul>
+					<li>				<a href="#">Email: info@photonoffshore.com</a>
+					</li>
+				</ul>
+			</nav> -->
+
+			</div>
+
+		</div>
+
+	</header>
+
+
+
+<h2 style="text-align:center">Motorman</h2>
+
+<div class="container">
+
+<div class="row">
+  <div class="col-md-2"></div>
+
+  <div class="col-md-8">
+<!--
+	<div class="description">
+	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
+	</p>
+	</div>
+  <div class="description">
+	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
+	</p>	</div>
+	<div class="description">
+	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
+	</p>	</div>\
+	<div class="description">
+	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
+	</p>	</div>
+	<div class="description">
+	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
+	</p>	</div>
+	<div class="description">
+	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
+	</p>	</div>
+	<div class="description">
+	<p id="descText">	Our low maintenance and simple design keeps us competitively priced. Every crane can be customized with various component systems such as remote control, cabin features and limitless rigging capabilities.
+	</p>	</div>
+   -->
+
+
+
+
+    <div class="column">
+      <img class="demo1 cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(1)" alt="The Woods" longdesc=" 1 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/logo_techcrane.jpg, images/logo_benelec.png, images/logo_motorman.jpg, logo_hadef.png">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="images/slider1.jpg" style="width:100%; height: 100%;" onclick="currentSlide(2)" alt="Trolltunga, Norway" longdesc=" 2 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/products/benelec/automation.png, images/products/benelec/bespoke.png, images/products/benelec/cranes.png, images/products/benelec/hazardous.png">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="images/slider2.jpg" style="width:100%; height: 100%;" onclick="currentSlide(3)" alt="Mountains and fjords" longdesc=" 3 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/products/techcrane/fixed/1.png, images/products/techcrane/fixed/2.png, images/products/techcrane/fixed/3.png, images/products/techcrane/fixed/4.png">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="images/slider3.jpg" style="width:100%; height: 100%;" onclick="currentSlide(4)" alt="Northern Lights" longdesc=" 4 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/products/techcrane/lattice/1.png, images/products/techcrane/lattice/2.png, images/products/techcrane/lattice/3.png, images/products/techcrane/lattice/4.png">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="images/slider1.jpeg" style="width:100%; height: 100%;" onclick="currentSlide(5)" alt="Nature and sunrise" longdesc=" 5 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes" srcset="images/logo_techcrane.jpg, images/logo_benelec.png, images/logo_motorman.jpg, logo_hadef.png">
+    </div>
+    <!-- <div class="column">
+      <img class="demo cursor" src="images/slider1.jpg" style="width:100%; height: 100%; border: 4px solid #2f3542;" onclick="currentSlide(6)" alt="Snowy Mountains" longdesc=" 6 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
+    </div> -->
+    <!-- <div class="column">
+      <img class="demo cursor" src="images/slider1.jpg" style="width:100%; height: 100%; border: 4px solid #2f3542;" onclick="currentSlide(7)" alt="Snowy Mountains" longdesc=" 7 Photon offshore is an Australian company running by experienced engineering team. Photon offshore, A supplier of material handling solution mainly dealing in offshore cranes">
+    </div> -->
+
+
+
+       <div class="mySlides1">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/slider1.jpeg" style="width:100%; height: 300px;">
+       </div>
+
+       <div class="mySlides1">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/slider1.jpg" style="width:100%;  height: 300px;">
+       </div>
+
+       <div class="mySlides1">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/slider2.jpg" style="width:100%; height: 300px;">
+       </div>
+
+       <div class="mySlides1">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/slider3.jpg" style="width:100%; height: 300px;">
+       </div>
+
+       <div class="mySlides1">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/slider1.jpeg" style="width:100%; height: 300px;">
+       </div>
+
+       <!-- <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/slider1.jpg" style="width:100%; height: 300px;">
+       </div> -->
+
+		<!-- <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/slider1.jpg" style="width:100%; height: 300px;">
+       </div> -->
+
+<!--
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a> -->
+
+    <div class="caption-container">
+      <div id="caption1"></div>
+      <div id="description1"></div>
+    </div>
+    <!-- <div class="tech-slideshow">
+  <div class="mover-1"></div>
+  <div class="mover-2"></div>
+</div> -->
+
+<div class="images-logo">
+
+    <div class="image_container">
+      <img src="images/slider1.jpeg" class="image1" />
+      <span>Label 1</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider2.jpg" class="image1" />
+      <span>Label 2</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider3.jpg" class="image1" />
+      <span>Label 3</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider1.jpeg" class="image1" />
+      <span>Label 4</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider2.jpg" class="image1" />
+      <span>Label 5</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider3.jpg" class="image1" />
+      <span>Label 6</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="images-logo">
+
+    <div class="image_container">
+      <img src="images/logo_hadef.png" class="image2" />
+      <span>Label 1</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_benelec.png" class="image2" />
+      <span>Label 2</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_motorman.jpg" class="image2" />
+      <span>Label 3</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_techcrane.jpg" class="image2" />
+      <span>Label 4</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_hadef.png" class="image2" />
+      <span>Label 5</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/logo_techcrane.jpg" class="image2" />
+      <span>Label 6</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+</div>
+
+
+<!-- <div class="images-logo">
+
+    <div class="image_container">
+      <img src="images/slider1.jpeg" class="image1" />
+      <span>Label 1</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider2.jpg" class="image1" />
+      <span>Label 2</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider3.jpg" class="image1" />
+      <span>Label 3</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider1.jpeg" class="image1" />
+      <span>Label 4</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider2.jpg" class="image1" />
+      <span>Label 5</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="images/slider3.jpg" class="image1" />
+      <span>Label 6</span>
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+</div> -->
+  <!-- <div class="slide1"><img src="images/slider1.jpg"></div>
+  <div class="slide1"><img src="images/slider2.jpg"></div>
+  <div class="slide1"><img src="images/slider3.jpg"></div>
+  <div class="slide1"><img src="images/slider1.jpeg"></div>
+  <div class="slide1"><img src="images/slider2.jpg"></div>
+  <div class="slide1"><img src="images/slider1.jpg"></div>
+  <div class="slide1"><img src="images/slider3.jpg"></div> -->
+
+
+
+
+    <!-- <div class="description-container">
+
+      <p id="description"></p>
+    </div> -->
+  </div>
+
+  <div class="col-md-2"></div>
+</div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+// var description = document.getElementsByClassName("mySlides");
+
+var dots = document.getElementsByClassName("demo");
+var scrolling_image = document.getElementsByClassName("image_container");
+
+
+
+// var desc = document.getElementsByClassName("demo");
+
+var captionText = document.getElementById("caption");
+var descriptionText = document.getElementById("description");
+
+if (n > slides.length) {slideIndex = 1}
+// if (n > description.length) {slideIndex = 1}
+
+if (n < 1) {slideIndex = slides.length}
+// if (n < 1) {slideIndex = description.length}
+
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+
+for (i = 0; i < dots.length; i++) {
+    var a = dots[slideIndex-1].getAttribute("longdesc");
+
+}
+
+for (i = 0; i < dots.length; i++) {
+    var image = dots[slideIndex-1].getAttribute("srcset");
+
+}
+
+console.log(a);
+
+// for (i = 0; i < dots.length; i++) {
+//     var a = dots[slideIndex-1].getAttribute("longdesc");
+//
+// }
+
+// for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+// }
+<!-- for (i = 0; i < dots.length; i++) {
+    <!-- dots[ --><!-- i].className = dots[i].className.replace(" active", "");
+ --> -->
+// for (i = 0; i < desc.length; i++) {
+//     desc[i].className = desc[i].className.replace(" active", "");
+// }
+slides[slideIndex-1].style.display = "block";
+// description[slideIndex-1].style.display = "block";
+
+<!-- dots[slideIndex-1].className += " active"; -->
+// desc[slideIndex-1].className += " active";
+
+captionText.innerHTML = dots[slideIndex-1].alt;
+// console.log(a);
+descriptionText.innerHTML= a;
+scrolling_image.innerHTML = image;
+
+}
+
+
+</script>
+
+<script>
+$(document).ready(function(){
+			$('.images-logo').slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				autoplay: false,
+				autoplaySpeed: 1000,
+				arrows: true,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
+</script>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+
+}
+
+function showSlides(n) {
+var i;
+var slides1 = document.getElementsByClassName("mySlides1");
+// var description = document.getElementsByClassName("mySlides");
+
+var dots1 = document.getElementsByClassName("demo1");
+
+// var desc = document.getElementsByClassName("demo");
+
+var captionText1 = document.getElementById("caption1");
+var descriptionText1 = document.getElementById("description1");
+
+if (n > slides1.length) {slideIndex = 1}
+// if (n > description.length) {slideIndex = 1}
+
+if (n < 1) {slideIndex = slides1.length}
+// if (n < 1) {slideIndex = description.length}
+
+for (i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";
+}
+
+for (i = 0; i < dots1.length; i++) {
+    var a = dots1[slideIndex-1].getAttribute("longdesc");
+
+}
+
+// for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+// }
+<!-- for (i = 0; i < dots1.length; i++) {
+    <!-- dots1[ --><!-- i].className = dots1[i].className.replace(" active", "");
+ --> -->
+// for (i = 0; i < desc.length; i++) {
+//     desc[i].className = desc[i].className.replace(" active", "");
+// }
+slides1[slideIndex-1].style.display = "block";
+// description[slideIndex-1].style.display = "block";
+
+<!-- dots1[slideIndex-1].className += " active"; -->
+// desc[slideIndex-1].className += " active";
+
+captionText1.innerHTML = dots1[slideIndex-1].alt;
+// console.log(a);
+descriptionText1.innerHTML= a;
+
+}
+
+
+</script>
+
+// <script>
+// // $("#sub_im").attr("src","second.jpg");
+// $('.image_container').each(function(){
+//       //Change the src of each img
+//       $(this).attr('src', 'images/fixed.png');
+// });
+// </script>
+</body>
+</html>
